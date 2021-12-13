@@ -111,10 +111,13 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xfb;
-        pchMessageStart[1] = 0xc0;
-        pchMessageStart[2] = 0xb6;
-        pchMessageStart[3] = 0xdb;
+        
+        // hehe chad :D
+        // this could cause problems later but i dont care, it says chad in hex code
+        pchMessageStart[0] = 0x43;
+        pchMessageStart[1] = 0x48;
+        pchMessageStart[2] = 0x40;
+        pchMessageStart[3] = 0x44;
         nDefaultPort = 9333;
         nPruneAfterHeight = 100000;
 
