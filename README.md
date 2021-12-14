@@ -1,11 +1,17 @@
-Litecoin Core integration/staging tree
+HawkCoin
 =====================================
+> because other low effort altcoins weren't stupid enough.
 
-[![Build Status](https://travis-ci.org/litecoin-project/litecoin.svg?branch=master)](https://travis-ci.org/litecoin-project/litecoin)
+[![Issues](https://img.shields.io/github/issues/hotcocoaNcode/HawkCoin?style=for-the-badge)](https://img.shields.io/github/issues/hotcocoaNcode/HawkCoin?style=for-the-badge)
+<!--- [![Build Status](https://travis-ci.org/litecoin-project/litecoin.svg?branch=master)](https://travis-ci.org/litecoin-project/litecoin)
 
-https://litecoin.org
+ Sorry! will add once done refactoring blockchain :P
 
-What is Litecoin?
+--->
+
+another stupid litecoin fork
+
+The heck is a litecoins?
 ----------------
 
 Litecoin is an experimental digital currency that enables instant payments to
@@ -17,10 +23,22 @@ software which enables the use of this currency.
 For more information, as well as an immediately useable, binary version of
 the Litecoin Core software, see [https://litecoin.org](https://litecoin.org).
 
+So what does that mean about HawkCoin?
+--------------------------------------
+
+It's a copy of whatever the Litecoin thing is. Idk i just followed a tutorial i'm not coding god or something, whoever came up with the blockchain idea in the first place is.
+
+WHAT'S A BLOCKCHAIN...?
+---
+
+Ok so imagine a thingy that has payments recorded on it, right? You can send and recieve moneys. Anyone can say anyone sent stuff, which requires trust and I have issues with trust so we're going to yeet it for now. Essentially you have a signature like on a piece of paper but code for every transaction on it to make sure it's legit stuff. It also changes the signature each message so that you don't just say "gimme 20 bucks bro" and the last signed one was "1 buck pls" anyway moving on. So now nobody can lie. Poggers pogchampius or something. Now we have to deal with more of my trust issues: WHO THE HECK OWNS THIS DOCUMENT? Like where is this ledger thingy that stores payments? Screw this, everybody gets a ledger. Instead of recodring payments, you record blocks which are tiny ledgers from poeple which contain payments that are signed and verified so you know what's happening and can be sure about it.
+
+Cool so that's the entire thing explained basically
+
 License
 -------
 
-Litecoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+HawkCoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
