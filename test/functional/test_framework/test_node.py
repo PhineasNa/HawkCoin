@@ -2,7 +2,7 @@
 # Copyright (c) 2017 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Class for litecoind node under test"""
+"""Class for hawkcoind node under test"""
 
 import decimal
 import errno
@@ -24,7 +24,7 @@ from .authproxy import JSONRPCException
 BITCOIND_PROC_WAIT_TIMEOUT = 60
 
 class TestNode():
-    """A class for representing a litecoind node under test.
+    """A class for representing a hawkcoind node under test.
 
     This class contains:
 
@@ -45,7 +45,7 @@ class TestNode():
             # Wait for up to 60 seconds for the RPC server to respond
             self.rpc_timeout = 60
         if binary is None:
-            self.binary = os.getenv("LITECOIND", "litecoind")
+            self.binary = os.getenv("LITECOIND", "hawkcoind")
         else:
             self.binary = binary
         self.stderr = stderr
@@ -76,14 +76,14 @@ class TestNode():
             stderr = self.stderr
         self.process = subprocess.Popen(self.args + extra_args, stderr=stderr)
         self.running = True
-        self.log.debug("litecoind started, waiting for RPC to come up")
+        self.log.debug("hawkcoind started, waiting for RPC to come up")
 
     def wait_for_rpc_connection(self):
-        """Sets up an RPC connection to the litecoind process. Returns False if unable to connect."""
+        """Sets up an RPC connection to the hawkcoind process. Returns False if unable to connect."""
         # Poll at a rate of four times per second
         poll_per_s = 4
         for _ in range(poll_per_s * self.rpc_timeout):
-            assert self.process.poll() is None, "litecoind exited with status %i during initialization" % self.process.returncode
+            assert self.process.poll() is None, "hawkcoind exited with status %i during initialization" % self.process.returncode
             try:
                 self.rpc = get_rpc_proxy(rpc_url(self.datadir, self.index, self.rpchost), self.index, timeout=self.rpc_timeout, coveragedir=self.coverage_dir)
                 self.rpc.getblockcount()
@@ -102,7 +102,7 @@ class TestNode():
                 if "No RPC credentials" not in str(e):
                     raise
             time.sleep(1.0 / poll_per_s)
-        raise AssertionError("Unable to connect to litecoind")
+        raise AssertionError("Unable to connect to hawkcoind")
 
     def get_wallet_rpc(self, wallet_name):
         assert self.rpc_connected
@@ -146,7 +146,7 @@ class TestNode():
     def node_encrypt_wallet(self, passphrase):
         """"Encrypts the wallet.
 
-        This causes litecoind to shutdown, so this method takes
+        This causes hawkcoind to shutdown, so this method takes
         care of cleaning up resources."""
         self.encryptwallet(passphrase)
         self.wait_until_stopped()
