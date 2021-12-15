@@ -9,7 +9,7 @@ HawkCoin
 
 --->
 
-another stupid litecoin fork
+hawkcoin is put shortly; another stupid litecoin fork
 
 The heck is a litecoins?
 ----------------
@@ -26,7 +26,7 @@ the Litecoin Core software, see [https://litecoin.org](https://litecoin.org).
 So what does that mean about HawkCoin?
 --------------------------------------
 
-It's a copy of whatever the Litecoin thing is. Idk i just followed a tutorial i'm not coding god or something, whoever came up with the blockchain idea in the first place is.
+It's a copy of whatever the Hawkcoin thing is. Idk i just followed a tutorial i'm not coding god or something, whoever came up with the blockchain idea in the first place is.
 
 WHAT'S A BLOCKCHAIN...?
 ---
@@ -46,7 +46,7 @@ Development Process
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/litecoin-project/litecoin/tags) are created
-regularly to indicate new official, stable release versions of Litecoin Core.
+regularly to indicate new official, stable release versions of Hawkcoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -88,7 +88,7 @@ Translations
 ------------
 
 We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Litecoin periodically.
+Translations are converted to Hawkcoin periodically.
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.
